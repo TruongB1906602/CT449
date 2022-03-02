@@ -1,4 +1,4 @@
-const { response } = require("../app");
+// const { response } = require("../app");
 
 class BadRequestError extends Error{
     constructor(statusCode, message){
@@ -21,5 +21,5 @@ class ErrorHandler{
 }
 module.exports ={
     BadRequestError,
-    ErrorHandler : new ErrorHandler(),
+    errorHandler : new ErrorHandler(),
 };
